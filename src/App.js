@@ -1,11 +1,15 @@
+import React from "react";
+import { Admin, Resource } from "react-admin";
+import restProvider from "ra-data-simple-rest";
+import FoodList from "./components/Foods/FoodList";
 
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Admin dataProvider={restProvider("http://localhost:4200")}>
+      <Resource name="foods" list={FoodList} />
+    </Admin>
   );
 }
 
