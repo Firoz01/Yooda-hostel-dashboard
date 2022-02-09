@@ -7,14 +7,17 @@ import {
   DeleteButton,
 } from "react-admin";
 const FoodList = (props) => {
-    return <List {...props}>
-        <Datagrid>
-            <TextField source="id" />
-            <TextField source="name" />
-            <EditButton basePath="/foods" />
-            <DeleteButton basePath="/foods"/>
+  return (
+    <List {...props}>
+      <Datagrid>
+        <TextField source="_id" />
+        <TextField source="name" />
+        <TextField source="price" />
+        <EditButton basePath="/foods" />
+        <DeleteButton basePath="/foods" />
       </Datagrid>
-  </List>;
+    </List>
+  );
 };
 
 export default FoodList;
