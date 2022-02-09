@@ -1,5 +1,5 @@
 import React from 'react';
-import { Create, SimpleForm, NumberInput, TextInput, CreateButton } from 'react-admin';
+import { Create, SimpleForm, NumberInput, TextInput} from 'react-admin';
 
 const FoodCreate = (props) => {
     return (
@@ -7,7 +7,6 @@ const FoodCreate = (props) => {
         <SimpleForm>
           <TextInput source="name" />
           <NumberInput source="price" />
-          <CreateButton basePath="/foods" />
         </SimpleForm>
       </Create>
     );

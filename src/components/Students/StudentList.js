@@ -18,7 +18,7 @@ const StudentList = (props) => {
         <NumberField source="age" />
         <TextField source="class" />
         <TextField source="hall" />
-        <StatusButton/>
+        <StatusButton />
         <EditButton basePath="/students" />
         <DeleteButton basePath="/students" />
       </Datagrid>
