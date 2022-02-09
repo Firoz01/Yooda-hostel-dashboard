@@ -7,6 +7,7 @@ import {
   DeleteButton,
   NumberField,
 } from "react-admin";
+import StatusButton from "./StatusButton";
 const StudentList = (props) => {
   return (
     <List {...props}>
@@ -17,7 +18,7 @@ const StudentList = (props) => {
         <NumberField source="age" />
         <TextField source="class" />
         <TextField source="hall" />
-        <TextField source="status" />
+        <StatusButton/>
         <EditButton basePath="/students" />
         <DeleteButton basePath="/students" />
       </Datagrid>

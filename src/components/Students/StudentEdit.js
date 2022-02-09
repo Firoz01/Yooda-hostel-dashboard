@@ -4,6 +4,7 @@ import {
   SimpleForm,
   NumberInput,
   TextInput,
+  BooleanInput,
 } from "react-admin";
 
 const StudentEdit = (props) => {
@@ -15,7 +16,7 @@ const StudentEdit = (props) => {
         <NumberInput source="age" />
         <TextInput source="class" />
         <TextInput source="hall" />
-        <TextInput source="status" />
+        <BooleanInput source="isStatus"/>
       </SimpleForm>
     </Edit>
   );

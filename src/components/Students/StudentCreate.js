@@ -1,5 +1,5 @@
 import React from "react";
-import { Create, SimpleForm, NumberInput, TextInput } from "react-admin";
+import { Create, SimpleForm, NumberInput, TextInput, BooleanInput } from "react-admin";
 
 const StudentCreate = (props) => {
   return (
@@ -10,7 +10,7 @@ const StudentCreate = (props) => {
         <NumberInput source="age" />
         <TextInput source="class" />
         <TextInput source="hall" />
-        <TextInput source="status"/>
+        <BooleanInput source="isStatus"/>
       </SimpleForm>
     </Create>
   );
